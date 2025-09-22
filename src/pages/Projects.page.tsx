@@ -66,7 +66,7 @@ export default function Projects() {
           <Flex>
             <Loader />
           </Flex>
-        ) : (
+        ) : data?.data?.records.length > 0 ? (
           <SimpleGrid cols={3} spacing="md">
             {data?.data?.records.map((i: any) => (
               <Card withBorder shadow="md">
@@ -82,6 +82,10 @@ export default function Projects() {
               </Card>
             ))}
           </SimpleGrid>
+        ) : (
+          <Flex justify="center" align="center">
+            <Text>No projects found</Text>
+          </Flex>
         )}
       </Box>
       <Modal
