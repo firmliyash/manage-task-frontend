@@ -7,11 +7,9 @@ import {
   Paper,
   Text,
   Anchor,
-  Alert,
   rem,
 } from "@mantine/core";
 import { useForm, yupResolver } from "@mantine/form";
-import { IconInfoCircle } from "@tabler/icons-react";
 import { useNavigate, Link } from "react-router-dom";
 import { useLogin } from "../hooks/useAuth";
 import { LoginCredentials } from "../types/auth";

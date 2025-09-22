@@ -1,15 +1,9 @@
-import { useNavigate, Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import {
-  Container,
-  Paper,
   TextInput,
-  PasswordInput,
   Button,
-  Title,
   Text,
-  Anchor,
   Stack,
-  Alert,
   Flex,
   Box,
   SimpleGrid,
@@ -26,11 +20,8 @@ import { useForm, yupResolver } from "@mantine/form";
 import { ProjectSchema } from "../types/auth";
 import { createProjectSchema } from "../schemas/project.schema";
 import { useCreateProject, useGetProjects } from "../hooks/useProject";
-import { useState } from "react";
 export default function Projects() {
   const navigate = useNavigate();
-  const [page, setPage] = useState(1);
-  const [per_page, setPerPage] = useState(10);
   const [opened, { open, close }] = useDisclosure();
   const { mutate: createProject, isPending } = useCreateProject();
   const { data, isLoading } = useGetProjects({ page: 1, per_page: 50 });

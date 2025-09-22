@@ -2,13 +2,11 @@ import {
   Container,
   Title,
   Text,
-  Button,
   Card,
   Group,
   Stack,
   Badge,
 } from "@mantine/core";
-import { IconLogout } from "@tabler/icons-react";
 import { useLogout } from "../hooks/useAuth";
 import { useAppSelector } from "../hooks/redux";
 import DashboardLayout from "../layouts/Dashboard.layout";

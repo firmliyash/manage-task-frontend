@@ -1,43 +1,30 @@
-import { useNavigate, Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import {
-  Container,
-  Paper,
-  TextInput,
-  PasswordInput,
   Button,
   Title,
   Text,
-  Anchor,
   Stack,
-  Alert,
   Flex,
   Box,
-  SimpleGrid,
   Card,
   Modal,
-  ActionIcon,
   Group,
   Loader,
   Select,
   Table,
-  Divider,
   Avatar,
   Badge,
 } from "@mantine/core";
 import DashboardLayout from "../layouts/Dashboard.layout";
 import { useDisclosure } from "@mantine/hooks";
-import { IconChevronRight, IconEdit, IconTrash } from "@tabler/icons-react";
+import { IconEdit, IconTrash } from "@tabler/icons-react";
 import { useForm, yupResolver } from "@mantine/form";
-import { ProjectSchema } from "../types/auth";
-import { createProjectSchema } from "../schemas/project.schema";
 import {
-  useCreateProject,
   useGetProjectMembers,
-  useGetProjects,
   useGetProjectTasks,
   useUserInvite,
 } from "../hooks/useProject";
-import { use, useState } from "react";
+import { useState } from "react";
 import { startCase } from "lodash";
 import { useGetUsers } from "../hooks/useAuth";
 export default function ProjectDetail() {

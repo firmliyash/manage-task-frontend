@@ -1,4 +1,4 @@
-import { Paper, rem, Title } from "@mantine/core";
+import { rem } from "@mantine/core";
 
 export default function GuestLayout({
   children,

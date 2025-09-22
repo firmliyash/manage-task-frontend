@@ -1,6 +1,5 @@
 import { useNavigate, Link } from "react-router-dom";
 import {
-  Container,
   Paper,
   TextInput,
   PasswordInput,
@@ -9,11 +8,8 @@ import {
   Text,
   Anchor,
   Stack,
-  Alert,
-  Flex,
 } from "@mantine/core";
 import { useForm, yupResolver } from "@mantine/form";
-import { IconInfoCircle } from "@tabler/icons-react";
 import { useSignup } from "../hooks/useAuth";
 import { SignupCredentials } from "../types/auth";
 import GuestLayout from "../layouts/GuestLayout";

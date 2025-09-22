@@ -1,4 +1,3 @@
-import { useNavigate, Link } from "react-router-dom";
 import {
   TextInput,
   Button,
@@ -7,15 +6,12 @@ import {
   Flex,
   Box,
   SimpleGrid,
-  Card,
   Modal,
-  Group,
   Loader,
   Select,
 } from "@mantine/core";
 import DashboardLayout from "../layouts/Dashboard.layout";
 import { useDisclosure } from "@mantine/hooks";
-import { IconChevronRight } from "@tabler/icons-react";
 import { useForm, yupResolver } from "@mantine/form";
 import { CreateTaskSchema } from "../types/auth";
 import {
@@ -28,7 +24,6 @@ import { createTaskSchema } from "../schemas/task.schema";
 import {
   useGetProjectDropdown,
   useGetDropdownProjectMembers,
-  useGetProjects,
 } from "../hooks/useProject";
 import { DatePickerInput } from "@mantine/dates";
 import { TaskCard } from "../components/Task.component";
