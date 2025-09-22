@@ -80,7 +80,7 @@ export const useTaskStatusUpdate = () => {
     onSuccess: (data) => {
       notifications.show({
         title: "Success",
-        message: "Task deleted successfully!",
+        message: "Task status updated successfully!",
         color: "green",
       });
       // Invalidate queries on login
