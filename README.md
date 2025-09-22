@@ -84,8 +84,7 @@ The application integrates with your backend API running on port 8001. The expec
 - `POST /auth/login` - User login
 - `POST /auth/signup` - User registration  
 - `POST /auth/logout` - User logout
-- `POST /auth/refresh` - Token refresh
-- `GET /auth/me` - Get current user
+- `POST /auth/refresh` - Token refresh 
 
 ### Expected Login Response Format
 
